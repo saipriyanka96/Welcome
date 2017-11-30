@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.example.layout.welcome.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="26dp"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/username"
+            android:background="@android:color/background_light"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Email"
+             />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="299sp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="102dp"
+        android:background="@android:color/background_light"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:text="Not a member? Sign up now." />
+
+
+</RelativeLayout>
+
+    <!-- LinearLayout is a view group that aligns all children in either vertically or horizontally.
+           The TextView is an Android control used to build the GUI and it have various attributes
+           ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+           When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+           as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+           it very often
+           wrap_content tells your view to size itself to the dimensions required by its content.
+           match_parent tells your view to become as big as its parent view group will allow.
+           gravity means the postion of textview
+           background means color of the screen
+           textColor means color of the text
+           textSize means size of the text
+           -->
